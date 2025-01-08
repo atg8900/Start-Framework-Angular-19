@@ -1,0 +1,49 @@
+<nav
+  class="navbar navbar-expand-md bg-main p-4 fixed-top"
+  [class.p-4]="!isScrolling"
+>
+  <div class="container">
+    <a class="navbar-brand fs-2 fw-bolder" routerLink="/home"
+      >START FRAMEWORK</a
+    >
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item fs-5 me-3 fw-bolder text-uppercase">
+          <a
+            class="nav-link"
+            routerLink="/about"
+            routerLinkActive="rounded bg-active"
+            >About</a
+          >
+        </li>
+        <li class="nav-item fs-5 me-3 fw-bolder text-uppercase">
+          <a
+            class="nav-link"
+            routerLink="/portfolio"
+            routerLinkActive="rounded bg-active"
+            >Portfolio</a
+          >
+        </li>
+        <li class="nav-item fs-5 me-3 fw-bolder text-uppercase">
+          <a
+            class="nav-link"
+            routerLink="/contact"
+            routerLinkActive="rounded bg-active"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

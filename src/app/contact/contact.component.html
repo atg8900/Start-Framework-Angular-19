@@ -1,0 +1,60 @@
+<section class="vh-90 py-5">
+  <div class="container">
+    <app-star title="conatct section" myColor="#000"></app-star>
+    <form action="" class="w-50 m-auto">
+      <label
+        for="userName"
+        class="text-sec position-relative top-0 my-2"
+        [class.top-40]="!userName.length"
+        >userName :
+      </label>
+      <input
+        type="text"
+        placeholder="userName"
+        name="userName"
+        [(ngModel)]="userName"
+        class="form-control my-2 border-start-0 border-top-0 rounded-0 border-end-0 shadow-none position-relative"
+      />
+      <label
+        for="userAge"
+        class="text-sec position-relative top-0 my-2"
+        [class.top-40]="!userAge.length"
+        >userAge :
+      </label>
+      <input
+        type="text"
+        placeholder="userAge"
+        name="userAge"
+        [(ngModel)]="userAge"
+        class="form-control my-2 border-start-0 border-top-0 rounded-0 border-end-0 shadow-none position-relative"
+      />
+      <label
+        for="userEmail"
+        class="text-sec position-relative top-0 my-2"
+        [class.top-40]="!userEmail.length"
+        >userEmail :
+      </label>
+      <input
+        type="text"
+        placeholder="userEmail"
+        name="userEmail"
+        [(ngModel)]="userEmail"
+        class="form-control my-2 border-start-0 border-top-0 rounded-0 border-end-0 shadow-none position-relative"
+      />
+      <label
+        for="userPassword"
+        class="text-sec position-relative top-0 my-2"
+        [class.top-40]="!userPassword.length"
+        >userPassword :
+      </label>
+      <input
+        type="text"
+        placeholder="userPassword"
+        name="userPassword"
+        [(ngModel)]="userPassword"
+        class="form-control my-2 border-start-0 border-top-0 rounded-0 border-end-0 shadow-none position-relative"
+      />
+      <button class="my-btn">send Message</button>
+    </form>
+  </div>
+</section>

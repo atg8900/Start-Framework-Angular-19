@@ -1,0 +1,31 @@
+.vh-90 {
+  min-height: 90vh;
+}
+section {
+  margin-top: 75px;
+}
+
+.form-control:focus {
+  border-color: #e1e3e4;
+}
+.top-40 {
+  top: 40px !important;
+}
+.my-btn {
+  background-color: #1abc9c;
+  color: #fff;
+  padding: 10px 25px;
+  outline: none;
+  border-radius: 10px;
+  border: none;
+  margin-top: 10px;
+}
+label {
+  color: #1abc9c;
+  transition: 0.6s;
+}
+@media (max-width: 768px) {
+  form {
+    width: 100% !important;
+  }
+}

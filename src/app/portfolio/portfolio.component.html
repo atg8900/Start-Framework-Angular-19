@@ -1,0 +1,36 @@
+<section class="vh-90 py-5">
+  <div class="container">
+    <app-star title="portfolio component" myColor="#000"></app-star>
+    <div class="row g-5">
+      @for (image of images; track $index) {
+
+      <div class="col-lg-4 col-md-6 overflow-hidden">
+        <figure
+          class="position-relative"
+          (click)="showContainer(image, $index)"
+        >
+          <img [src]="image" alt="ggg" class="w-100 rounded" />
+          <figcaption class="rounded">
+            <i class="fa-solid fa-plus fa-6x fw-semibold text-white"></i>
+          </figcaption>
+        </figure>
+      </div>
+      }
+    </div>
+  </div>
+</section>
+
+<div class="light-container" [class.d-none]="flag" (click)="closeSlie($event)">
+  <div class="box" (click)="notCloseSlie($event)">
+    <span
+      ><i id="prev" class="fa-solid fa-circle-left" (click)="slide(-1)"></i
+    ></span>
+    <img [src]="srcimg" alt="" class="rounded w-100" />
+    <span
+      ><i id="next" class="fa-solid fa-circle-right" (click)="slide(1)"></i
+    ></span>
+    <span>
+      <i id="close" class="fa-solid fa-circle-xmark" (click)="flag = true"></i
+    ></span>
+  </div>
+</div>

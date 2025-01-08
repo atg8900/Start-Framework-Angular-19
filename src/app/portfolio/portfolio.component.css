@@ -1,0 +1,62 @@
+.vh-90 {
+  min-height: 90vh;
+}
+section {
+  margin-top: 75px;
+}
+
+figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: #1abc9c;
+  cursor: pointer;
+  transition: all 0.6s;
+}
+figure:hover figcaption {
+  display: flex;
+}
+.light-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 255, 0.3);
+  z-index: 99;
+}
+.light-container .box {
+  position: relative;
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.light-container .box i {
+  color: rgb(0, 90, 128);
+  font-size: 30px;
+  cursor: pointer;
+  margin: 15px;
+  margin-top: 5px;
+}
+.light-container .box #prev {
+  position: absolute;
+}
+.light-container .box #next {
+  position: absolute;
+  right: 1px;
+}
+.light-container .box #close {
+  position: absolute;
+  right: 0px;
+  top: 0;
+}
